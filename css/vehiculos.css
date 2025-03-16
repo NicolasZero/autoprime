@@ -1,0 +1,127 @@
+main{
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: minmax(200px,250px) 2fr 1fr;
+    grid-template-rows: repeat(3,min-content);
+    grid-template-areas: 
+    "item-2 item-1 item-4"
+    "item-2 item-3 item-4"
+    "item-2 item-5 item-4";    
+}
+
+.item-1{
+    grid-area: item-1;
+    padding: 1rem;
+}
+
+.item-2{
+    grid-area: item-2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.item-2 img {
+    cursor: pointer;
+    border-radius: .5rem;
+    width: 200px;
+}
+
+.item-2 img:hover{
+    box-shadow: 0 0 10px #000;
+}
+
+.item-3{
+    grid-area: item-3;
+    text-align: center;
+    padding: 1rem;
+}
+
+.item-3 img{
+    border-radius: .5rem;
+}
+
+.item-4{
+    grid-area: item-4;
+    padding: .8rem;
+    background-color: #ebebeb;
+}
+
+.item-4 header{
+    text-align: center;
+}
+
+.item-4 section{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.item-4 section a{
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    color: #000;
+}
+
+.item-4 section a:hover{
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.item-4 button{
+    font-size: larger;
+    background-color: #ce6d11;
+    border: none;
+    padding: 10px 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-4 button:hover{
+    background-color: #5e3712;
+    color: #ebebeb;
+}
+
+.item-5{
+    grid-area: item-5;
+}
+
+@media (max-width: 768px) {
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item-1 item-4"
+        "item-3 item-4"
+        "item-5 item-4"
+        "item-2 item-2";
+    }
+
+    .item-2{
+        flex-direction: row;
+        overflow-x: scroll;
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item-1"
+        "item-3"
+        "item-5"
+        "item-4"
+        "item-2";
+    }
+    .item-2{
+        flex-direction: row;
+        overflow-x: scroll;
+        height: 200px;
+    }
+}

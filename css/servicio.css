@@ -1,0 +1,57 @@
+button,
+input,
+select,
+textarea,
+select {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    width: 100%;
+    background-color: #ebebeb;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button{
+    font-size: larger;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #585858;
+    color: #ebebeb;
+}
+
+main{
+    padding: 1rem;
+}
+
+main header{
+    margin-bottom: 1rem;
+}
+.contact-form section{
+    margin: 1rem 0;
+}
+
+.contact-form label{
+    color: #585858;
+}
+
+.contact-form div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,auto);
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.span{
+    grid-column: span 3;
+}
+
+.contact-form div > *{
+    padding: 10px;
+}

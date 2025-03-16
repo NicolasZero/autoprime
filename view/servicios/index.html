@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoprime - Servicios</title>
+    <link rel="shortcut icon" href="/favicon.jpeg" type="image/x-jpeg">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/servicio.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <h4>Autoprime</h4>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a class="active" href="#">Servicios</a>
+                    <ul>
+                        <li><a class="active" href="/view/servicios/">Solicitar servicio</li>
+                        <li><a href="/view/servicios/info/">Información</li>
+                    </ul>
+                </li>
+                <li><a href="/view/vehiculos/">Vehiculos</a></li>
+                <li><a href="/view/contacto/">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <header>
+            <h1>¿Quiere solicitar un servicio?</h1>
+            <p>Dejanos tus datos y nos pondremos en contacto con usted</p>
+        </header>
+        
+        <form class="contact-form">
+            <section>
+                <h4>Datos personales</h4>
+                <div class="personal">
+                    <label>Nombre<br>
+                        <input type="text" name="name">
+                    </label>
+                    
+                    <label>Apellido<br>
+                        <input type="text" name="lastname">
+                    </label>
+    
+                    <label>Genero<br>
+                        <select name="gender">
+                            <option value="male">Hombre</option>
+                            <option value="female">Mujer</option>
+                        </select>
+                    </label>
+    
+                    <label>CI<br>
+                        <input type="number" name="name">
+                    </label>
+    
+                    <label>Telefono<br>
+                        <input type="tel" name="phone">
+                    </label>
+    
+                    <label>Email<br>
+                        <input type="email" name="email">
+                    </label>
+                </div>
+            </section>
+
+            <section>
+                <h4>Elige el concesionario</h4>
+                <div class="elecciones">
+                    <label>Elección 1<br>
+                        <select name="eleccion1">
+                            <option value="1">opcion 1</option>
+                            <option value="2">opcion 2</option>
+                        </select>
+                    </label>
+    
+                    <label>Elección 2<br>
+                        <select name="eleccion1">
+                            <option value="1">opcion 1</option>
+                            <option value="2">opcion 2</option>
+                        </select>
+                    </label>
+    
+                    <label>Elección 3<br>
+                        <select name="eleccion1">
+                            <option value="1">opcion 1</option>
+                            <option value="2">opcion 2</option>
+                        </select>
+                    </label>
+    
+                    <label class="span">Detalles<br>
+                        <textarea name="message" rows="5"></textarea>
+                    </label>
+                </div>
+            </section>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <h4>Autoprime </h4>
+        <p>Ubicados en el: dfsdfsfsdfwe</p>
+        <nav>
+            <p>Todos los derechos reservados</p>
+            <div>
+                <a href="/">Inicio</a>
+                <a class="active" href="/view/servicios/">Servicios</a>
+                <a href="/view/vehiculos/">Vehiculos</a>
+                <a href="/view/contacto/">Contacto</a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoprime - Servicios</title>
     <link rel="shortcut icon" href="/favicon.jpeg" type="image/x-jpeg">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/servicio.css">
+    <!-- <link rel="stylesheet" href="/css/servicio.css"> -->
+    <style>
+        button,
+        input,
+        select,
+        textarea,
+        select {
+            font-family: inherit;
+            font-size: 100%;
+            margin: 0;
+            width: 100%;
+            background-color: #ebebeb;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #585858;
+            color: #ebebeb;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        main header {
+            margin-bottom: 1rem;
+        }
+
+        .contact-form section {
+            margin: 1rem 0;
+        }
+
+        .contact-form label {
+            color: #585858;
+        }
+
+        .contact-form div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+
+            @media (max-width: 576px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .span {
+            grid-column: span 3;
+        }
+
+        .contact-form div>* {
+            padding: 10px;
+        }
+    </style>
 
 </head>
+
 <body>
     <header class="navbar">
         <h4>Autoprime</h4>
@@ -32,7 +94,7 @@
             <h1>¿Quiere solicitar un servicio?</h1>
             <p>Dejanos tus datos y nos pondremos en contacto con usted</p>
         </header>
-        
+
         <form class="contact-form">
             <section>
                 <h4>Datos personales</h4>
@@ -40,26 +102,26 @@
                     <label>Nombre<br>
                         <input type="text" name="name">
                     </label>
-                    
+
                     <label>Apellido<br>
                         <input type="text" name="lastname">
                     </label>
-    
+
                     <label>Genero<br>
                         <select name="gender">
                             <option value="male">Hombre</option>
                             <option value="female">Mujer</option>
                         </select>
                     </label>
-    
+
                     <label>CI<br>
                         <input type="number" name="name">
                     </label>
-    
+
                     <label>Telefono<br>
                         <input type="tel" name="phone">
                     </label>
-    
+
                     <label>Email<br>
                         <input type="email" name="email">
                     </label>
@@ -75,21 +137,21 @@
                             <option value="2">opcion 2</option>
                         </select>
                     </label>
-    
+
                     <label>Elección 2<br>
                         <select name="eleccion1">
                             <option value="1">opcion 1</option>
                             <option value="2">opcion 2</option>
                         </select>
                     </label>
-    
+
                     <label>Elección 3<br>
                         <select name="eleccion1">
                             <option value="1">opcion 1</option>
                             <option value="2">opcion 2</option>
                         </select>
                     </label>
-    
+
                     <label class="span">Detalles<br>
                         <textarea name="message" rows="5"></textarea>
                     </label>
@@ -115,4 +177,5 @@
         </nav>
     </footer>
 </body>
+
 </html>

@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoprime - Servicios</title>
     <link rel="shortcut icon" href="/favicon.jpeg" type="image/x-jpeg">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/info.css">
+    <!-- <link rel="stylesheet" href="/css/info.css"> -->
+    <style>
+        main {
+            padding: 0.5rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+
+            @media (max-width: 576px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        main>* {
+            padding: 1rem;
+        }
+
+        main section h1 {
+            font-size: 3rem;
+        }
+
+        main section>* {
+            margin-bottom: 1rem;
+        }
+
+        main aside img {
+            border-radius: .5rem;
+        }
+    </style>
 
 </head>
+
 <body>
     <header class="navbar">
         <h4>Autoprime</h4>
@@ -30,8 +60,9 @@
     <main>
         <section>
             <h1>Información</h1>
-            <p>Para cuidar tu inversion debes mantener tu vehiculo 100% Original, por lo tanto, debes llevarlo a un taller oficial, por lo tanto, te recomendamos:</p>
-    
+            <p>Para cuidar tu inversion debes mantener tu vehiculo 100% Original, por lo tanto, debes llevarlo a un
+                taller oficial, por lo tanto, te recomendamos:</p>
+
             <ol>
                 <li>Realizar mantenimiento preventivo de tu vehiculo</li>
                 <li>Utilizar respuestos orginales en tu vehiculo</li>
@@ -47,8 +78,8 @@
         <aside>
             <img class="img-flex" src="/img/tesla.jpg" alt="">
         </aside>
-        
-        
+
+
     </main>
 
     <footer>
@@ -65,4 +96,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
